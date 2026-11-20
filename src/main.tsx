@@ -1,8 +1,8 @@
 import {createRoot} from "react-dom/client";
 import './styles.css';
-import TopBooks from "./TopBooks.tsx";
+import CourseHeader from "./CourseHeader.tsx";
 
 const root = createRoot(document.getElementById('root')!);
-root.render(<div>
-  <TopBooks/>
+root.render(<div className="p-7.75">
+  <CourseHeader/>
 </div>);

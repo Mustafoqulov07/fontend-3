@@ -1,40 +1,7 @@
-/*Cascading Style Sheets*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "tailwindcss";
 
 body {
-    background-color: #202020;
-    font-family: Poppins, system-ui;
-    color: white;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
+  background-color: #202020;
+  font-family: Poppins, system-ui;
+  color: white;
 }
