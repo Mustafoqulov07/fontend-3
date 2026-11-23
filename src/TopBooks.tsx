@@ -1,9 +1,9 @@
 import TopBookItem from "./TopBookItem.tsx";
-// Ctrl + Alt + L
-export default function TopBooks() {
-  return <div className="flex flex-col" style={{gap: '18px', backgroundColor: '#1A1D1F', borderRadius: '8px', width: '326px'}}>
+
+export default function TopBooks({title}) {
+  return <div className="flex flex-col gap-4.5 bg-[#1A1D1F] rounded-lg w-81.5 border border-[#1F272A]">
     <div className="flex flex-row justify-between" style={{padding: '16px 16px 0 16px'}}>
-      <h1 style={{fontSize: '18px', color: '#FCFCFC', fontWeight: '500'}}>Top kitoblar</h1>
+      <h1 style={{fontSize: '18px', color: '#FCFCFC', fontWeight: '500'}}>{title}</h1>
       <button className="flex flex-row items-center" style={{color: '#9DA1A3', backgroundColor: 'transparent', border: 'none'}}>
         Barchasi
         <img src="/arrow-right.svg" alt="icon"/>
