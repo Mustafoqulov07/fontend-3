@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 export default function() {
+    const [isOpen, setIsOpen] = useState(false);
+
+
     return <div className="w-256.5 h-133.75 bg-[#1A1D1F] rounded-xl border border-[#1F272A] pt-8 pl-8">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row gap-5">
@@ -52,10 +57,12 @@ export default function() {
                   </div>
                 </div>
 
+                
+
                 <div className="flex flex-row gap-4 w-92.5 h-12.5">
-                  <button className="flex flex-row items-center h-12.5 px-10 rounded-lg bg-[#1C92E0] text-white gap-2.5">
-                    <img className="w-6 h-6" src="Component.svg" alt="icon" />
-                    Savatchaga
+                  <button className={`flex flex-row items-center h-12.5 px-10 rounded-lg text-white gap-2.5 ${isOpen ? 'bg-[#F7F9FA]/10' : 'bg-[#1C92E0]'}`} onClick={() => setIsOpen(!isOpen)}>
+                    <img className="w-6 h-6" src={isOpen ? 'cart add.svg' : '/Component.svg'} alt="icon" />
+                    {isOpen ? 'Savatchada' : 'Savatchaga'}
                   </button>
 
                   <button className="flex items-center justify-center w-12.5 h-12.5 rounded-lg border border-[#F7F9FA]/30 bg-[#F7F9FA]/10">
