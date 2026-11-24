@@ -1,9 +1,9 @@
-import CardSelection from "./CardSelection";
+import LibrarySection from "./LiblarySection";
 
 export default function App() {
   return (
     <div className="p-7.75">
-      <CardSelection/>
+      <LibrarySection/>
     </div>
   );
 }
